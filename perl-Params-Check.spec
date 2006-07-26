@@ -15,8 +15,6 @@ License:	(enter GPL/LGPL/BSD/BSD-like/Artistic/other license name here)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1756a2b387544fea13b442f3be8a39dc
-#Patch0:		%{name}
-# most of CPAN modules have generic URL (substitute pdir and pnam here)
 URL:		http://search.cpan.org/dist/Params-Check
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -27,16 +25,18 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Perl module Params::Check is a generic input parsing/checking mechanism. 
-It allows you to validate input via a template. The only requirement is that the arguments must be named.
-Params::Check can do the following things for you:
- - Convert all keys to lowercase
- - Check if all required arguments have been provided
- - Set arguments that have not been provided to the default
- - Weed out arguments that are not supported and warn about them to the user
- - Validate the arguments given by the user based on strings, regexes, lists or even subroutines
- - Enforce type integrity if required
-
+Perl module Params::Check is a generic input parsing/checking
+mechanism. It allows you to validate input via a template. The only
+requirement is that the arguments must be named. Params::Check can do
+the following things for you:
+- Convert all keys to lowercase
+- Check if all required arguments have been provided
+- Set arguments that have not been provided to the default
+- Weed out arguments that are not supported and warn about them to the
+  user
+- Validate the arguments given by the user based on strings, regexes,
+  lists or even subroutines
+- Enforce type integrity if required
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
