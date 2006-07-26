@@ -61,6 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README CHANGES
-%dir %attr(755,root,root) %{perl_vendorlib}/Params
+%dir %{perl_vendorlib}/Params
 %{perl_vendorlib}/Params/Check.pm
 %{_mandir}/man3/*
