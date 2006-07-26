@@ -1,21 +1,22 @@
 #
 # Conditional build:
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Params
 %define		pnam	Check
-Summary:	perl(Params::Check)
+Summary:	Params::Check - a generic input parsing/checking mechanism
+Summary(pl):	Params::Check - ogólny mechanizm analizy i sprawdzania wej¶cia
 Name:		perl-Params-Check
 Version:	0.25
 Release:	0.1
-# note if it is "same as perl"
-License:	(enter GPL/LGPL/BSD/BSD-like/Artistic/other license name here)
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1756a2b387544fea13b442f3be8a39dc
-URL:		http://search.cpan.org/dist/Params-Check
+URL:		http://search.cpan.org/dist/Params-Check/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} && %{with tests}
@@ -37,6 +38,19 @@ the following things for you:
 - Validate the arguments given by the user based on strings, regexes,
   lists or even subroutines
 - Enforce type integrity if required
+
+%description -l pl
+Modu³ Perla Params::Check to ogólny mechanizm do analizy i sprawdzania
+wej¶cia. Pozwala na sprawdzanie poprawno¶ci wej¶cia poprzez szablon.
+Jedynym wymaganiem jest to, ¿eby argumenty by³y nazwane. Params::Check
+mo¿e zrobiæ nastêpuj±ce rzeczy:
+- przekszta³ciæ wszystkie klucze na ma³e litery
+- sprawdziæ, czy wszystkie wymagane argumenty zosta³y podane
+- ustawiæ nie podane argumenty na warto¶ci domy¶lne
+- oddzieliæ argumenty nieobs³ugiwane i ostrzec o nich u¿ytkownika
+- sprawdziæ poprawno¶æ podanych przez u¿ytkownika argumentów w oparciu
+  o ³añcuchy znaków, wyra¿enia regularne, listy lub nawet procedury
+- wymusiæ spójno¶æ typów w razie potrzeby.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
