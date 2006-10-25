@@ -10,7 +10,7 @@ Summary:	Params::Check - a generic input parsing/checking mechanism
 Summary(pl):	Params::Check - ogólny mechanizm analizy i sprawdzania wej¶cia
 Name:		perl-Params-Check
 Version:	0.25
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
