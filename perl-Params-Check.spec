@@ -7,7 +7,7 @@
 %define		pdir	Params
 %define		pnam	Check
 Summary:	Params::Check - a generic input parsing/checking mechanism
-Summary(pl.UTF-8):   Params::Check - ogólny mechanizm analizy i sprawdzania wejścia
+Summary(pl.UTF-8):	Params::Check - ogólny mechanizm analizy i sprawdzania wejścia
 Name:		perl-Params-Check
 Version:	0.25
 Release:	1
