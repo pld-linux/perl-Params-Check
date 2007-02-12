@@ -7,7 +7,7 @@
 %define		pdir	Params
 %define		pnam	Check
 Summary:	Params::Check - a generic input parsing/checking mechanism
-Summary(pl):	Params::Check - ogólny mechanizm analizy i sprawdzania wej¶cia
+Summary(pl.UTF-8):   Params::Check - ogÃ³lny mechanizm analizy i sprawdzania wejÅ›cia
 Name:		perl-Params-Check
 Version:	0.25
 Release:	1
@@ -39,18 +39,18 @@ the following things for you:
   lists or even subroutines
 - Enforce type integrity if required
 
-%description -l pl
-Modu³ Perla Params::Check to ogólny mechanizm do analizy i sprawdzania
-wej¶cia. Pozwala na sprawdzanie poprawno¶ci wej¶cia poprzez szablon.
-Jedynym wymaganiem jest to, ¿eby argumenty by³y nazwane. Params::Check
-mo¿e zrobiæ nastêpuj±ce rzeczy:
-- przekszta³ciæ wszystkie klucze na ma³e litery
-- sprawdziæ, czy wszystkie wymagane argumenty zosta³y podane
-- ustawiæ nie podane argumenty na warto¶ci domy¶lne
-- oddzieliæ argumenty nieobs³ugiwane i ostrzec o nich u¿ytkownika
-- sprawdziæ poprawno¶æ podanych przez u¿ytkownika argumentów w oparciu
-  o ³añcuchy znaków, wyra¿enia regularne, listy lub nawet procedury
-- wymusiæ spójno¶æ typów w razie potrzeby.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Params::Check to ogÃ³lny mechanizm do analizy i sprawdzania
+wejÅ›cia. Pozwala na sprawdzanie poprawnoÅ›ci wejÅ›cia poprzez szablon.
+Jedynym wymaganiem jest to, Å¼eby argumenty byÅ‚y nazwane. Params::Check
+moÅ¼e zrobiÄ‡ nastÄ™pujÄ…ce rzeczy:
+- przeksztaÅ‚ciÄ‡ wszystkie klucze na maÅ‚e litery
+- sprawdziÄ‡, czy wszystkie wymagane argumenty zostaÅ‚y podane
+- ustawiÄ‡ nie podane argumenty na wartoÅ›ci domyÅ›lne
+- oddzieliÄ‡ argumenty nieobsÅ‚ugiwane i ostrzec o nich uÅ¼ytkownika
+- sprawdziÄ‡ poprawnoÅ›Ä‡ podanych przez uÅ¼ytkownika argumentÃ³w w oparciu
+  o Å‚aÅ„cuchy znakÃ³w, wyraÅ¼enia regularne, listy lub nawet procedury
+- wymusiÄ‡ spÃ³jnoÅ›Ä‡ typÃ³w w razie potrzeby.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
