@@ -9,13 +9,13 @@
 Summary:	Params::Check - a generic input parsing/checking mechanism
 Summary(pl.UTF-8):	Params::Check - ogólny mechanizm analizy i sprawdzania wejścia
 Name:		perl-Params-Check
-Version:	0.26
+Version:	0.32
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d740a81f3078dcae83d8b6b4859885c7
+# Source0-md5:	887b049db1d150cabef0fc62d51c16c2
 URL:		http://search.cpan.org/dist/Params-Check/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
